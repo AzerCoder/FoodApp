@@ -8,17 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		82A497C62C50C9C00072494C /* FoodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497C52C50C9C00072494C /* FoodAppApp.swift */; };
-		82A497C82C50C9C00072494C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497C72C50C9C00072494C /* ContentView.swift */; };
 		82A497CA2C50C9C10072494C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A497C92C50C9C10072494C /* Assets.xcassets */; };
 		82A497CD2C50C9C10072494C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A497CC2C50C9C10072494C /* Preview Assets.xcassets */; };
+		82A497D82C50CB270072494C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497D72C50CB270072494C /* HomeView.swift */; };
+		82A497DA2C50CB720072494C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497D92C50CB720072494C /* HomeViewModel.swift */; };
+		82A497DC2C50CC340072494C /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497DB2C50CC340072494C /* FoodModel.swift */; };
+		82A497E12C50D0B30072494C /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497E02C50D0B30072494C /* Preview.swift */; };
+		82A497E42C50D5510072494C /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497E32C50D5510072494C /* FoodCell.swift */; };
+		82A497E62C50D55F0072494C /* FreshCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497E52C50D55F0072494C /* FreshCell.swift */; };
+		82A497E92C50D5EB0072494C /* Utills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497E82C50D5EB0072494C /* Utills.swift */; };
+		82A497EB2C50E10A0072494C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497EA2C50E10A0072494C /* SearchBarView.swift */; };
+		82A497EE2C50EA270072494C /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497ED2C50EA270072494C /* NetworkingManager.swift */; };
+		82A497F12C50EA5D0072494C /* FoodDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497F02C50EA5D0072494C /* FoodDataService.swift */; };
+		82A497F32C50FD090072494C /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497F22C50FD090072494C /* FoodDetailView.swift */; };
+		82A497F62C5109430072494C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 82A497F52C5109430072494C /* SDWebImageSwiftUI */; };
+		82A497F82C51217E0072494C /* SavedFoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497F72C51217E0072494C /* SavedFoodViewModel.swift */; };
+		82A497FA2C513FDC0072494C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497F92C513FDC0072494C /* MenuView.swift */; };
+		82A497FC2C5148AA0072494C /* MenuComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497FB2C5148AA0072494C /* MenuComponent.swift */; };
+		82A497FE2C514BBC0072494C /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497FD2C514BBC0072494C /* FavouriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82A497C22C50C9C00072494C /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A497C52C50C9C00072494C /* FoodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppApp.swift; sourceTree = "<group>"; };
-		82A497C72C50C9C00072494C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82A497C92C50C9C10072494C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82A497CC2C50C9C10072494C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82A497D72C50CB270072494C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		82A497D92C50CB720072494C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		82A497DB2C50CC340072494C /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		82A497E02C50D0B30072494C /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		82A497E32C50D5510072494C /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		82A497E52C50D55F0072494C /* FreshCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshCell.swift; sourceTree = "<group>"; };
+		82A497E82C50D5EB0072494C /* Utills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utills.swift; sourceTree = "<group>"; };
+		82A497EA2C50E10A0072494C /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		82A497ED2C50EA270072494C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		82A497F02C50EA5D0072494C /* FoodDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataService.swift; sourceTree = "<group>"; };
+		82A497F22C50FD090072494C /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		82A497F72C51217E0072494C /* SavedFoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedFoodViewModel.swift; sourceTree = "<group>"; };
+		82A497F92C513FDC0072494C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		82A497FB2C5148AA0072494C /* MenuComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuComponent.swift; sourceTree = "<group>"; };
+		82A497FD2C514BBC0072494C /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A497F62C5109430072494C /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +81,13 @@
 		82A497C42C50C9C00072494C /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
-				82A497C52C50C9C00072494C /* FoodAppApp.swift */,
-				82A497C72C50C9C00072494C /* ContentView.swift */,
-				82A497C92C50C9C10072494C /* Assets.xcassets */,
+				82A497EF2C50EA3D0072494C /* Services */,
+				82A497EC2C50EA0A0072494C /* Utilities */,
+				82A497D42C50CAFB0072494C /* Model */,
+				82A497D52C50CB020072494C /* ViewModel */,
+				82A497D62C50CB0D0072494C /* View */,
+				82A497DF2C50D0A10072494C /* Extensions */,
+				82A497D32C50CAD60072494C /* App */,
 				82A497CB2C50C9C10072494C /* Preview Content */,
 			);
 			path = FoodApp;
@@ -65,6 +99,80 @@
 				82A497CC2C50C9C10072494C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82A497D32C50CAD60072494C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				82A497C52C50C9C00072494C /* FoodAppApp.swift */,
+				82A497C92C50C9C10072494C /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		82A497D42C50CAFB0072494C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82A497DB2C50CC340072494C /* FoodModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82A497D52C50CB020072494C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				82A497D92C50CB720072494C /* HomeViewModel.swift */,
+				82A497F72C51217E0072494C /* SavedFoodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		82A497D62C50CB0D0072494C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A497D72C50CB270072494C /* HomeView.swift */,
+				82A497F22C50FD090072494C /* FoodDetailView.swift */,
+				82A497F92C513FDC0072494C /* MenuView.swift */,
+				82A497FD2C514BBC0072494C /* FavouriteView.swift */,
+				82A497E22C50D4DC0072494C /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82A497DF2C50D0A10072494C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				82A497E02C50D0B30072494C /* Preview.swift */,
+				82A497E82C50D5EB0072494C /* Utills.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		82A497E22C50D4DC0072494C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				82A497E32C50D5510072494C /* FoodCell.swift */,
+				82A497E52C50D55F0072494C /* FreshCell.swift */,
+				82A497EA2C50E10A0072494C /* SearchBarView.swift */,
+				82A497FB2C5148AA0072494C /* MenuComponent.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		82A497EC2C50EA0A0072494C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				82A497ED2C50EA270072494C /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		82A497EF2C50EA3D0072494C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82A497F02C50EA5D0072494C /* FoodDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +191,9 @@
 			dependencies = (
 			);
 			name = FoodApp;
+			packageProductDependencies = (
+				82A497F52C5109430072494C /* SDWebImageSwiftUI */,
+			);
 			productName = FoodApp;
 			productReference = 82A497C22C50C9C00072494C /* FoodApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 82A497B92C50C9C00072494C;
+			packageReferences = (
+				82A497F42C5109430072494C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 82A497C32C50C9C00072494C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +251,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82A497C82C50C9C00072494C /* ContentView.swift in Sources */,
 				82A497C62C50C9C00072494C /* FoodAppApp.swift in Sources */,
+				82A497EB2C50E10A0072494C /* SearchBarView.swift in Sources */,
+				82A497E42C50D5510072494C /* FoodCell.swift in Sources */,
+				82A497EE2C50EA270072494C /* NetworkingManager.swift in Sources */,
+				82A497E62C50D55F0072494C /* FreshCell.swift in Sources */,
+				82A497F32C50FD090072494C /* FoodDetailView.swift in Sources */,
+				82A497FC2C5148AA0072494C /* MenuComponent.swift in Sources */,
+				82A497F12C50EA5D0072494C /* FoodDataService.swift in Sources */,
+				82A497FA2C513FDC0072494C /* MenuView.swift in Sources */,
+				82A497DA2C50CB720072494C /* HomeViewModel.swift in Sources */,
+				82A497F82C51217E0072494C /* SavedFoodViewModel.swift in Sources */,
+				82A497E12C50D0B30072494C /* Preview.swift in Sources */,
+				82A497D82C50CB270072494C /* HomeView.swift in Sources */,
+				82A497DC2C50CC340072494C /* FoodModel.swift in Sources */,
+				82A497FE2C514BBC0072494C /* FavouriteView.swift in Sources */,
+				82A497E92C50D5EB0072494C /* Utills.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +472,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82A497F42C5109430072494C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82A497F52C5109430072494C /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82A497F42C5109430072494C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82A497BA2C50C9C00072494C /* Project object */;
 }
