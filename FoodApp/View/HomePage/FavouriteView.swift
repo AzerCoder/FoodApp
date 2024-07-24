@@ -19,8 +19,17 @@ struct FavouriteView: View {
                     VStack{
                         SearchBarView(searchText: $vm.searchText)
                             .padding(.bottom)
-                        ForEach(vm.foods,id: \.id){food in
-                            FoodCell(viewMadel: vm, food: food)
+                        if vm.foods.isEmpty{
+                            
+                            Text("No saving")
+                                .font(.title).bold()
+                                .foregroundColor(Utills.orange)
+                                .frame(maxHeight: .infinity,alignment: .center)
+                            
+                        }else{
+                            ForEach(vm.foods,id: \.id){food in
+                                FoodCell(viewMadel: vm, food: food)
+                            }
                         }
                     }.padding()
                         .onDisappear{
@@ -39,8 +48,8 @@ struct FavouriteView: View {
                     trailing:  Text("Favourite")
                         .bold().font(.title)
                         .foregroundColor(.white)
-                   
-            )
+                    
+                )
             }
         }
     }

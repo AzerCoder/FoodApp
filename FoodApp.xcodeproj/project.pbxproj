@@ -32,6 +32,7 @@
 		82A4980B2C5190290072494C /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A4980A2C5190290072494C /* CategoryView.swift */; };
 		82A4980D2C5192600072494C /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A4980C2C5192600072494C /* CategoryCell.swift */; };
 		82A4980F2C51995D0072494C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A4980E2C51995D0072494C /* DetailView.swift */; };
+		82A498112C51A1310072494C /* CustumProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A498102C51A1310072494C /* CustumProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		82A4980A2C5190290072494C /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		82A4980C2C5192600072494C /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		82A4980E2C51995D0072494C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		82A498102C51A1310072494C /* CustumProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				82A497DB2C50CC340072494C /* FoodModel.swift */,
 				82A498012C5185010072494C /* CategoryModel.swift */,
+				82A497E32C50D5510072494C /* FoodCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,11 +165,11 @@
 		82A497E22C50D4DC0072494C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				82A497E32C50D5510072494C /* FoodCell.swift */,
 				82A497E52C50D55F0072494C /* FreshCell.swift */,
 				82A497EA2C50E10A0072494C /* SearchBarView.swift */,
 				82A497FB2C5148AA0072494C /* MenuComponent.swift */,
 				82A4980C2C5192600072494C /* CategoryCell.swift */,
+				82A498102C51A1310072494C /* CustumProgress.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				82A498022C5185010072494C /* CategoryModel.swift in Sources */,
 				82A4980B2C5190290072494C /* CategoryView.swift in Sources */,
 				82A497E62C50D55F0072494C /* FreshCell.swift in Sources */,
+				82A498112C51A1310072494C /* CustumProgress.swift in Sources */,
 				82A497F32C50FD090072494C /* FoodDetailView.swift in Sources */,
 				82A497FC2C5148AA0072494C /* MenuComponent.swift in Sources */,
 				82A497F12C50EA5D0072494C /* FoodDataService.swift in Sources */,

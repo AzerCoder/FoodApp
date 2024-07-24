@@ -12,17 +12,19 @@ class HomeViewModel:ObservableObject{
     @Published var foods:[Meal] = []
     @Published var category:[Category] = []
     @Published var searchText:String = ""
+    @Published var isLoading = false
     
     private let foodDataService = FoodDataService()
     private let categoryDataService = CategoryDataService()
     private var cencellables = Set<AnyCancellable>()
     
     init(){
+        
         addSubscribers()
     }
     
     func addSubscribers(){
-        
+        isLoading = true
         $searchText
             .combineLatest(foodDataService.$foods)
             .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
@@ -37,6 +39,9 @@ class HomeViewModel:ObservableObject{
                 self?.category = returned
             }
             .store(in: &cencellables)
+        DispatchQueue.main.asyncAfter(deadline: .now()+1){
+            self.isLoading = false
+        }
         
     }
     

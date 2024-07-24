@@ -24,12 +24,18 @@ struct HomeView: View {
                     
                     ScrollView(showsIndicators:false){
                         header
-                        if vm.searchText.isEmpty{
-                            freshCells
+                        if vm.foods.isEmpty{
+                            Text("No result")
+                                .font(.title).bold()
+                                .foregroundColor(Utills.orange)
+                                .frame(maxHeight: .infinity,alignment: .center)
+                        }else{
+                            if vm.searchText.isEmpty{
+                                freshCells
+                            }
+                            
+                            foodCells
                         }
-                     
-                        foodCells
-                        
                     }
                     
                     .navigationBarItems(
@@ -55,9 +61,14 @@ struct HomeView: View {
                         vm.searchText = ""
                     }
                 }
+                .refreshable {
+                    vm.addSubscribers()
+                }
                 
             }
-           
+            if vm.isLoading{
+                CustumProgress()
+            }
             menuButtonAction
         }
     }
