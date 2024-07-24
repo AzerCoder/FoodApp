@@ -10,9 +10,11 @@ import Combine
 
 class HomeViewModel:ObservableObject{
     @Published var foods:[Meal] = []
+    @Published var category:[Category] = []
     @Published var searchText:String = ""
     
     private let foodDataService = FoodDataService()
+    private let categoryDataService = CategoryDataService()
     private var cencellables = Set<AnyCancellable>()
     
     init(){
@@ -29,6 +31,13 @@ class HomeViewModel:ObservableObject{
                 self?.foods = returned
             }
             .store(in: &cencellables)
+        
+        categoryDataService.$category
+            .sink {[weak self] (returned) in
+                self?.category = returned
+            }
+            .store(in: &cencellables)
+        
     }
     
     private func filterFoods(text:String,foods:[Meal]) -> [Meal]{

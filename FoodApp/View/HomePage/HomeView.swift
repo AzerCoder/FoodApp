@@ -24,9 +24,10 @@ struct HomeView: View {
                     
                     ScrollView(showsIndicators:false){
                         header
-                        
-                        freshCells
-                        
+                        if vm.searchText.isEmpty{
+                            freshCells
+                        }
+                     
                         foodCells
                         
                     }
@@ -39,19 +40,20 @@ struct HomeView: View {
                                 .bold()
                                 .foregroundColor(.white)
                         }),
-                        trailing: Button(action: {
-                            
-                        }, label: {
-                            Image(systemName: "bell.fill")
+                        trailing:NavigationLink(destination:CategoryView(), label: {
+                            Image(systemName: "square.grid.2x2.fill")
                                 .foregroundColor(.white)
                         })
+                        
                         
                         
                     )
                     .fullScreenCover(isPresented: $isShow, content: {
                         FavouriteView(isShow: $isShow)
                     })
-                    
+                    .onDisappear{
+                        vm.searchText = ""
+                    }
                 }
                 
             }

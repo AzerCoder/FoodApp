@@ -14,10 +14,10 @@ struct MenuComponent: View {
         HStack{
             Image(systemName: image)
                 .resizable()
-                .frame(width: 35,height: 35)
+                .frame(width: 30,height: 30)
             
             Text(text)
-                .font(.title)
+                .font(.title2)
                 .bold()
                 .padding(.leading,30)
             Spacer()

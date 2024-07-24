@@ -11,14 +11,20 @@ import Combine
 class SavedFoodViewModel:ObservableObject{
     
     @Published var foods: [Meal] = []
-    @Published var searchText: String = ""
+    @Published var searchText: String = ""{
+        didSet {
+            addSubscribers()
+            load()
+        }
+    }
     
     private let fileName = "foods.json"
     private var cancellables = Set<AnyCancellable>()
     
     init() {
-        load()
         addSubscribers()
+        load()
+        
     }
     
     private func addSubscribers() {

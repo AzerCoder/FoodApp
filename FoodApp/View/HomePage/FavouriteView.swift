@@ -23,7 +23,9 @@ struct FavouriteView: View {
                             FoodCell(viewMadel: vm, food: food)
                         }
                     }.padding()
-                    
+                        .onDisappear{
+                            vm.searchText = ""
+                        }
                 }
                 .navigationBarItems(
                     leading: Button(action: {

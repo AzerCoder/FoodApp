@@ -26,6 +26,12 @@
 		82A497FA2C513FDC0072494C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497F92C513FDC0072494C /* MenuView.swift */; };
 		82A497FC2C5148AA0072494C /* MenuComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497FB2C5148AA0072494C /* MenuComponent.swift */; };
 		82A497FE2C514BBC0072494C /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A497FD2C514BBC0072494C /* FavouriteView.swift */; };
+		82A498002C517E980072494C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A497FF2C517E980072494C /* Launch Screen.storyboard */; };
+		82A498022C5185010072494C /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A498012C5185010072494C /* CategoryModel.swift */; };
+		82A498042C51863D0072494C /* CategoryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A498032C51863D0072494C /* CategoryDataService.swift */; };
+		82A4980B2C5190290072494C /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A4980A2C5190290072494C /* CategoryView.swift */; };
+		82A4980D2C5192600072494C /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A4980C2C5192600072494C /* CategoryCell.swift */; };
+		82A4980F2C51995D0072494C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A4980E2C51995D0072494C /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,12 @@
 		82A497F92C513FDC0072494C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		82A497FB2C5148AA0072494C /* MenuComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuComponent.swift; sourceTree = "<group>"; };
 		82A497FD2C514BBC0072494C /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		82A497FF2C517E980072494C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		82A498012C5185010072494C /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		82A498032C51863D0072494C /* CategoryDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDataService.swift; sourceTree = "<group>"; };
+		82A4980A2C5190290072494C /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		82A4980C2C5192600072494C /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		82A4980E2C51995D0072494C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,7 @@
 			children = (
 				82A497C52C50C9C00072494C /* FoodAppApp.swift */,
 				82A497C92C50C9C10072494C /* Assets.xcassets */,
+				82A497FF2C517E980072494C /* Launch Screen.storyboard */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -114,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				82A497DB2C50CC340072494C /* FoodModel.swift */,
+				82A498012C5185010072494C /* CategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,10 +144,7 @@
 		82A497D62C50CB0D0072494C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				82A497D72C50CB270072494C /* HomeView.swift */,
-				82A497F22C50FD090072494C /* FoodDetailView.swift */,
-				82A497F92C513FDC0072494C /* MenuView.swift */,
-				82A497FD2C514BBC0072494C /* FavouriteView.swift */,
+				82A498072C5189760072494C /* HomePage */,
 				82A497E22C50D4DC0072494C /* Cells */,
 			);
 			path = View;
@@ -155,6 +166,7 @@
 				82A497E52C50D55F0072494C /* FreshCell.swift */,
 				82A497EA2C50E10A0072494C /* SearchBarView.swift */,
 				82A497FB2C5148AA0072494C /* MenuComponent.swift */,
+				82A4980C2C5192600072494C /* CategoryCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -171,8 +183,22 @@
 			isa = PBXGroup;
 			children = (
 				82A497F02C50EA5D0072494C /* FoodDataService.swift */,
+				82A498032C51863D0072494C /* CategoryDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		82A498072C5189760072494C /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				82A497D72C50CB270072494C /* HomeView.swift */,
+				82A497F22C50FD090072494C /* FoodDetailView.swift */,
+				82A497F92C513FDC0072494C /* MenuView.swift */,
+				82A497FD2C514BBC0072494C /* FavouriteView.swift */,
+				82A4980A2C5190290072494C /* CategoryView.swift */,
+				82A4980E2C51995D0072494C /* DetailView.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A498002C517E980072494C /* Launch Screen.storyboard in Resources */,
 				82A497CD2C50C9C10072494C /* Preview Assets.xcassets in Resources */,
 				82A497CA2C50C9C10072494C /* Assets.xcassets in Resources */,
 			);
@@ -255,18 +282,23 @@
 				82A497EB2C50E10A0072494C /* SearchBarView.swift in Sources */,
 				82A497E42C50D5510072494C /* FoodCell.swift in Sources */,
 				82A497EE2C50EA270072494C /* NetworkingManager.swift in Sources */,
+				82A498022C5185010072494C /* CategoryModel.swift in Sources */,
+				82A4980B2C5190290072494C /* CategoryView.swift in Sources */,
 				82A497E62C50D55F0072494C /* FreshCell.swift in Sources */,
 				82A497F32C50FD090072494C /* FoodDetailView.swift in Sources */,
 				82A497FC2C5148AA0072494C /* MenuComponent.swift in Sources */,
 				82A497F12C50EA5D0072494C /* FoodDataService.swift in Sources */,
+				82A4980F2C51995D0072494C /* DetailView.swift in Sources */,
 				82A497FA2C513FDC0072494C /* MenuView.swift in Sources */,
 				82A497DA2C50CB720072494C /* HomeViewModel.swift in Sources */,
+				82A498042C51863D0072494C /* CategoryDataService.swift in Sources */,
 				82A497F82C51217E0072494C /* SavedFoodViewModel.swift in Sources */,
 				82A497E12C50D0B30072494C /* Preview.swift in Sources */,
 				82A497D82C50CB270072494C /* HomeView.swift in Sources */,
 				82A497DC2C50CC340072494C /* FoodModel.swift in Sources */,
 				82A497FE2C514BBC0072494C /* FavouriteView.swift in Sources */,
 				82A497E92C50D5EB0072494C /* Utills.swift in Sources */,
+				82A4980D2C5192600072494C /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +438,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -435,6 +468,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
