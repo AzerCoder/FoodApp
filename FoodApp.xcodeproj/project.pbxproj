@@ -130,7 +130,6 @@
 			children = (
 				82A497DB2C50CC340072494C /* FoodModel.swift */,
 				82A498012C5185010072494C /* CategoryModel.swift */,
-				82A497E32C50D5510072494C /* FoodCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				82A497E52C50D55F0072494C /* FreshCell.swift */,
+				82A497E32C50D5510072494C /* FoodCell.swift */,
 				82A497EA2C50E10A0072494C /* SearchBarView.swift */,
 				82A497FB2C5148AA0072494C /* MenuComponent.swift */,
 				82A4980C2C5192600072494C /* CategoryCell.swift */,
